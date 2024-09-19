@@ -195,6 +195,8 @@ services:
     restart: always
     ports:
       - "6379"
+    networks:
+      app-network:
     volumes:
       - redis_data:/data
 
